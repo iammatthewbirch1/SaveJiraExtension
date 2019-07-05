@@ -1,0 +1,27 @@
+{
+  "name": "Save Jira Info",
+  "version": "1.0",
+  "description": "Save finished tickets to a text file, stored locally, so we can give updates easily.",
+  "permissions": ["activeTab", "declarativeContent", "storage", "http://*/*", "https://*/*"],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/jiraSave16.png",
+      "32": "images/jiraSave32.png",
+      "48": "images/jiraSave48.png",
+      "128": "images/jiraSave128.png"
+    }
+  },
+  "icons": {
+    "16": "images/jiraSave16.png",
+    "32": "images/jiraSave32.png",
+    "48": "images/jiraSave48.png",
+    "128": "images/jiraSave128.png"
+  },
+  "manifest_version": 2
+}

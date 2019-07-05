@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h2 {
+        font-weight: 100;
+        text-align: center;
+        margin: 12px 0 10px 0;
+        font-family: Arial,sans-serif;
+      }
+      button {
+        height: 30px;
+        width: 200px;
+        margin: 3px 15px;
+        outline: none;
+        background: none;
+        color: #0c0c6e;
+        border: 1px solid #205081;
+        transition: all 0.4s linear;
+      }
+      button:hover {
+        background: #205081;
+        color: #ffffff;
+      }
+      p {
+        margin: 0;
+        font-family: Arial,sans-serif;
+      }
+      a {
+        color: #3b73af;
+        font-family: Arial,sans-serif;
+      }
+      img {
+        vertical-align: top;
+        margin-top: 1px;
+      }
+      #noContent {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Save Jira Info <img src="/images/jiraSave16.png" alt=""> </h2>
+    <button id="addTicket">Add Ticket</button>
+    <!-- <button id="copyList">Copy To Clipboard</button> -->
+    <!-- <button id="selectAll">Select All</button> -->
+    <button id="clearList">Clear List</button>
+
+    <h2>Your List</h2>
+    <hr>
+    <p id="content"></p>
+    <p id="noContent"></p>
+    <script src="popup.js"></script>
+  </body>
+</html>
